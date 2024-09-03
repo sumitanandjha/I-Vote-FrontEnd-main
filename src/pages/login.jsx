@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     try {
       // Send form data to the backend API
-      const response = await axios.post('https://i-vote-backend.vercel.app/auth/login', {
+      const response = await axios.post('https://i-vote-backend-main.vercel.app/auth/login', {
         email,
         password,
       });

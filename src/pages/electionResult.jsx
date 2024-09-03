@@ -15,7 +15,7 @@ const ElectionResult = () => {
     useEffect(() => {
         const fetchElectionDetails = async () => {
             try {
-                const response = await axios.get(`https://i-vote-backend.vercel.app/election/${id}`);
+                const response = await axios.get(`https://i-vote-backend-main.vercel.app/election/${id}`);
                 setElection(response.data);
             } catch (err) {
                 setError(err.message);
